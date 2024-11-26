@@ -1,0 +1,221 @@
+/* General Styles for the Admin Product Section */
+.product-info {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.product-info h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.product-table th,
+.product-table td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: left;
+    font-size: 16px;
+}
+
+.product-table th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+    color: #555;
+}
+
+.product-table td {
+    background-color: #fff;
+    color: #333;
+}
+
+.product-table tr:nth-child(even) td {
+    background-color: #f7f7f7;
+}
+
+
+.product-image {
+    width: 100%;            /* Chiếm 100% chiều rộng của ô chứa */
+    height: auto;           /* Tự động điều chỉnh chiều cao để giữ tỷ lệ hình ảnh */
+    max-height: 100px;      /* Giới hạn chiều cao (có thể thay đổi tuỳ theo yêu cầu) */
+    object-fit: cover;      /* Giữ hình ảnh lấp đầy ô chứa mà không bị méo */
+    border-radius: 8px;     /* Bo tròn góc (tùy chọn) */
+}
+
+
+.add-button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.add-button:hover {
+    background-color: #45a049;
+}
+
+.edit-button, .delete-button {
+    padding: 6px 12px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.edit-button {
+    background-color: #008CBA;
+    color: white;
+}
+
+.delete-button {
+    background-color: #f44336;
+    color: white;
+}
+
+.edit-button:hover {
+    background-color: #007bb5;
+}
+
+.delete-button:hover {
+    background-color: #da190b;
+}
+
+.add-product-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.add-product-button:hover {
+    background-color: #45a049;
+}
+
+/* Styles for Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    max-width: 90%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+}
+
+input[type="text"], input[type="number"], select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Dropdown Select Styling */
+select {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #fff;
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+    appearance: none;
+    padding-right: 40px;
+    cursor: pointer;
+}
+
+select:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+/* Label for Inputs */
+label {
+    font-size: 16px;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Modal Header Styling */
+.modal-content h3 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* General Input Styles */
+input[type="text"], input[type="number"], select {
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+/* Modal Button Styles */
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

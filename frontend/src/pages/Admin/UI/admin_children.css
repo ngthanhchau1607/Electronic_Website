@@ -1,0 +1,179 @@
+.user-info {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .user-info h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .user-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .user-table th,
+  .user-table td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: left;
+    font-size: 16px;
+  }
+  
+  .user-table th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .user-table td {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .user-table tr:nth-child(even) td {
+    background-color: #f7f7f7;
+  }
+  
+  
+  .add-button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .add-button:hover {
+    background-color: #45a049;
+  }
+  
+  .edit-button, .delete-button {
+    padding: 6px 12px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .edit-button {
+    background-color: #008CBA;
+    color: white;
+  }
+  
+  .delete-button {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .edit-button:hover {
+    background-color: #007bb5;
+  }
+  
+  .delete-button:hover {
+    background-color: #da190b;
+  }
+
+
+  /* Định dạng cho modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Nền phủ mờ */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Đảm bảo modal nằm trên tất cả các phần tử khác */
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.dropdown select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+}
+
+.dropdown select:hover {
+  border-color: #4CAF50; /* Màu viền khi hover */
+}
+
+.dropdown select:focus {
+  outline: none;
+  border-color: #007bff; /* Màu viền khi chọn */
+}
+
+/* Tùy chỉnh cho option trong dropdown */
+.dropdown option {
+  padding: 8px;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Màu cho option khi hover */
+.dropdown option:hover {
+  background-color: #f0f0f0; /* Màu nền khi hover */
+}
+
+.song-image {
+  width: 50px; /* Đặt chiều rộng cho hình ảnh */
+  height: auto; /* Giữ tỉ lệ hình ảnh */
+  border-radius: 5px; /* Tùy chọn: thêm bo góc cho hình ảnh */
+}
