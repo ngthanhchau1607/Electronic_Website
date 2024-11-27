@@ -1,6 +1,7 @@
 const path = require('path')
 const express = require('express')
 const cors = require('cors');
+
 const methodOverride = require('method-override')
 const morgan = require('morgan')
 const handlebars = require('express-handlebars')
@@ -12,11 +13,13 @@ const db = require('./config/db')
 
 
 const app = express()
-const port = 3000 
+const PORT = process.env.PORT || 3000;
 
 const route = require('./routers') 
 
-app.use(cors()); 
+app.use(cors());
+
+require('dotenv').config();
 
 app.use(express.static(path.join(__dirname,'public'))); 
 
@@ -44,9 +47,9 @@ db.connect();
 route(app);  
 
 
-app.listen(port, () => {
-  console.log(`App listening on port http:/c/localhost:${port}`) 
-})
+app.listen(PORT, () => {
+  console.log(`Server đang chạy trên cổng ${PORT}`);
+});
 
 
  

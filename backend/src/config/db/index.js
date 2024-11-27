@@ -2,8 +2,9 @@ const mongoose = require('mongoose');
 
 function connect(){
     try {
-        mongoose.connect('mongodb://127.0.0.1:27017/tlcn')
+        mongoose.connect(process.env.MONGO_URI)
         .then(() => console.log('Connected!'));
+        
     } catch (error) {
         console.log('Connect that bai');
     }

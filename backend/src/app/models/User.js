@@ -1,16 +1,21 @@
-const mongoose = require('mongoose');  
+const mongoose = require('mongoose');
+
 const Schema = mongoose.Schema;
 
 const userSchema = new Schema({
-  username: { type: String, required: true },
+  full_name: { type: String, required: true },
+  email: { type: String, required: true, unique: true },
   password: { type: String, required: true },
-  email: { type: String, required: false },
-  google_id: { type: String, default: null },
   phone_number: { type: String, required: false },
   role: { type: String, default: 'USER' },
-  full_name: { type: String, required: true },
-  profile_picture: { type: String, default: null },
-  gender: { type: String, enum: ['male', 'female', 'other'], default: 'other' },
-},{ timestamps: true });
+  profile_picture: { type: String, required: false, default: null },
+  isVerified: { type: Boolean, default: false },
+  verificationToken: { type: String, default: null },
+  otp: { type: String, required: false },  // Trường này đã được khai báo đúng
+  otpExpiration: { type: Date, required: false },  // Trường này cũng đã được khai báo đúng
+}, { timestamps: true });
 
-module.exports = mongoose.model('User', userSchema, 'user');
+
+
+module.exports = mongoose.model('User', userSchema);
+
